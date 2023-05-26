@@ -1,0 +1,156 @@
+.cartHeader {
+  width: 100%;
+  height: 80vh !important;
+  background-image: url("../assets/cart-header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cart-page {
+  width: 100%;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+}
+
+.cart-page .cart-container {
+  width: 60%;
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-container .selected-item {
+  border: 1px solid silver;
+  width: 95%;
+  height: 200px;
+  padding: 0 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-container .selected-item img {
+  width: 220px;
+  height: 90%;
+}
+
+.cart-container .selected-item button {
+  padding: 5px;
+}
+
+.cart-page .sub-total {
+  width: 30%;
+  height: 300px;
+  float: right;
+  border: 1px solid silver;
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px silver; */
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-total .bill {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  border-bottom: 1px solid silver;
+}
+
+.sub-total h3 {
+  margin: 20px auto;
+  color: black;
+}
+
+.sub-total button {
+  padding: 10px;
+  width: 80%;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.sub-total button:hover {
+  background-color: black;
+  transition: 0.3s;
+}
+
+.cancel {
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+#delete {
+  width: 20px;
+  height: 20px;
+}
+
+.cart-page .sub-total .counter {
+  margin-top: 50px;
+}
+
+.quantity {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+  .cartHeader {
+    height: 42vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cart-page {
+    flex-direction: column;
+  }
+  .cart-page .cart-container {
+    width: 100%;
+  }
+  .cart-page .sub-total {
+    width: 80%;
+    height: auto;
+    float: right;
+  }
+  .cart-container .selected-item img {
+    width: 120px;
+    height: 150px;
+  }
+  .cancel {
+    position: relative;
+    bottom: 80px;
+  }
+  .quantity {
+    position: relative;
+    left: 25px;
+  }
+  .cart-page .sub-total {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+  .cartHeader {
+    height: 45vh;
+  }
+
+  .cart-page .cart-container {
+    width: 60%;
+    height: 30vh;
+  }
+}

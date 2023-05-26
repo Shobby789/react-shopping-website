@@ -1,0 +1,101 @@
+.signup {
+  width: 100%;
+  height: 100vh;
+  /* background-image: url("../assets/rest-1.jpg");
+  background-position: center;
+  background-size: cover; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 40%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  /* background: rgba(93, 91, 91, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.form-container h1 {
+  color: black;
+  margin-top: 60px;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.form-container .field-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form-container .field-container input {
+  padding: 10px;
+  width: 300px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border: 1px solid black;
+  border-radius: 0px;
+  font-size: 0.9rem;
+  color: black;
+  /* box-shadow: 0 0 5px silver; */
+}
+
+.form-container .field-container input::placeholder {
+  color: black;
+}
+
+.form-container .field-container input::after {
+  background-color: transparent;
+}
+
+.form-container .field-container button {
+  padding: 10px;
+  width: 100px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: black;
+  border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  margin-top: 20px;
+}
+
+.form-container .field-container button:hover {
+  transition: 0.3s;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.form-container .field-container p {
+  color: black;
+}
+
+.form-container .field-container a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.form-container .field-container a:hover {
+  color: black;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 480px) {
+  .form-container {
+    width: 90%;
+    height: auto;
+    padding: 0 10px 30px 10px;
+  }
+}

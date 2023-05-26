@@ -1,0 +1,53 @@
+.admin-dashboard {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.admin-dashboard .adminDetail {
+  border: none;
+  height: 300px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 0 0 10px silver;
+  background-color: white;
+}
+
+.admin-dashboard .adminDetail input {
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  width: 250px;
+  background-color: transparent;
+}
+
+.admin-dashboard .adminDetail label {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.admin-dashboard .adminDetail button {
+  padding: 8px;
+  width: 100px;
+  align-self: flex-end;
+  border: none;
+  outline: none;
+  background-color: cadetblue;
+  color: white;
+  font-weight: 700;
+  /* border-radius: 5px; */
+  cursor: pointer;
+}
+.admin-dashboard .adminDetail button:hover {
+  background-color: rgb(104, 134, 135);
+  transition: 0.3s;
+}
+
+/* pop up */

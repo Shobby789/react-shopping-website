@@ -1,0 +1,74 @@
+.women {
+  width: 100%;
+  padding: 100px 50px;
+}
+
+.women-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.women-container .women-card {
+  width: 300px;
+  height: 70vh;
+  /* border: 1px solid si   lver; */
+  box-shadow: 0 0 5px silver;
+  text-align: center;
+  margin: 20px;
+}
+
+.women-card img {
+  /* margin-top: 10px; */
+  width: 100%;
+  height: 75%;
+  background-color: rgb(235, 235, 232);
+}
+
+.women-card h4 {
+  margin-top: 10px;
+}
+
+.women-card button {
+  width: 90%;
+  border: 1px solid black;
+  padding: 7px;
+  background-color: transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
+.women-card button:hover {
+  /* background-color: rgb(163, 83, 239); */
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 480px) {
+  .women-container .women-card {
+    height: 60vh;
+  }
+  .women-container .women-card img {
+    height: 80%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 820px) {
+  .women-container .women-card {
+    height: 40vh;
+    width: 345px;
+  }
+}
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+  .women-container .women-card {
+    height: 40vh;
+  }
+
+  .women-container .women-card img {
+    height: 80%;
+  }
+}
