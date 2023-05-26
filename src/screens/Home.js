@@ -6,10 +6,15 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import MenuBar from "../components/MenuBar";
 import SaleCard from "../components/SaleCard";
+import { toast } from "react-toastify";
 
 export default function Home() {
   const Globalstate = useContext(CartContext);
   const dispatch = Globalstate.dispatch;
+
+  const showAlert = () => {
+    toast("No More Products! Go to Categories");
+  };
 
   return (
     <>
@@ -34,7 +39,9 @@ export default function Home() {
             );
           })}
         </div>
-        <button className="browseMore">Browse More</button>
+        <button className="browseMore" onClick={() => showAlert()}>
+          Browse More
+        </button>
       </div>
       <SaleCard />
       <Footer />

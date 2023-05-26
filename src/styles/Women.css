@@ -47,19 +47,25 @@
   transition: 0.3s;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 420px) {
   .women-container .women-card {
-    height: 60vh;
+    height: auto;
   }
   .women-container .women-card img {
     height: 80%;
   }
+  .women-card button {
+    margin-bottom: 10px;
+  }
 }
 
-@media screen and (min-width: 481px) and (max-width: 820px) {
+@media screen and (min-width: 421px) and (max-width: 820px) {
   .women-container .women-card {
     height: 40vh;
     width: 345px;
+  }
+  .women-card button {
+    margin-bottom: 10px;
   }
 }
 
@@ -70,5 +76,8 @@
 
   .women-container .women-card img {
     height: 80%;
+  }
+  .women-card button {
+    margin-bottom: 10px;
   }
 }
