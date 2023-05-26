@@ -9,19 +9,19 @@ import women7 from "../assets/women/girl4-removebg-preview.png";
 export const WomenClothes = [
   {
     id: "1",
-    title: "Ladies Top",
-    price: "9000",
+    title: "Girls Party Wear",
+    price: "1000",
     image: women1,
   },
   {
     id: "2",
-    title: "Ladies Top",
-    price: "1000",
+    title: "Ladies Jeans",
+    price: "3000",
     image: women2,
   },
   {
     id: "3",
-    title: "Ladies Top",
+    title: "Ladies T-Shirt",
     price: "1900",
     image: women3,
   },
@@ -34,19 +34,19 @@ export const WomenClothes = [
   {
     id: "5",
     title: "Ladies Top",
-    price: 19,
+    price: "1350",
     image: women5,
   },
   {
     id: "6",
     title: "Ladies Top",
-    price: 19,
+    price: "2900",
     image: women6,
   },
   {
     id: "7",
-    title: "Ladies Top",
-    price: 19,
+    title: "Girls Blue Shirt",
+    price: "1000",
     image: women7,
   },
 ];

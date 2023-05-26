@@ -8,7 +8,7 @@ export default function Login() {
   const { logIn } = useUserAuth();
   const navigate = useNavigate();
   const [error, setError] = useState("");
-
+  console.log(error);
   const [loginData, setLoginData] = useState({
     email: "",
     password: "",
@@ -23,7 +23,7 @@ export default function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (!loginData.email || !loginData.password) {
-      alert("Please Fill All The Fields");
+      toast.error("Please fill all the fields");
     } else {
       try {
         await logIn(loginData.email, loginData.password);

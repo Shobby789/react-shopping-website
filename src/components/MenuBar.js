@@ -1,16 +1,12 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import "../styles/MenuBar.css";
 import { Link, useNavigate } from "react-router-dom";
-import cartIcon from "../assets/icons/basket-cart-icon.png";
-import { CartContext } from "../context/CartContext";
 import { auth } from "../firebase-config";
 import { signOut } from "firebase/auth";
 
 export default function MenuBar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const navigate = useNavigate();
-  const Globalstate = useContext(CartContext);
-  const state = Globalstate.state;
 
   const handleLogout = async () => {
     await signOut(auth)

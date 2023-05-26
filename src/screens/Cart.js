@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import MenuBar from "../components/MenuBar";
 import trashIcon from "../assets/icons/Editing-Delete-icon.png";
 import AddItem from "../components/AddItem";
+import { toast } from "react-toastify";
 
 export default function Cart() {
   const Globalstate = useContext(CartContext);
@@ -16,6 +17,9 @@ export default function Cart() {
   }, 0);
 
   const [showForm, setShowForm] = useState(false);
+  const checkItems = () => {
+    toast.error("Please add items first");
+  };
 
   return (
     <>
@@ -88,9 +92,13 @@ export default function Cart() {
             <p>Total</p>
             {state.length > 0 && <p>Rs. {total + 20}</p>}
           </div>
-
-          <button onClick={() => setShowForm(true)}>Place Order</button>
-          {/* <button onClick={() => navigate("/checkout")}>Place Order</button> */}
+          {state && state.length > 0 ? (
+            <button onClick={() => setShowForm(true)}>Place Order</button>
+          ) : (
+            <button onClick={() => checkItems()}>Place Order</button>
+          )}
+          {/* <button onClick={() => checkItems()}>Place Order</button> */}
+          {/* <button onClick={() => setShowForm(true)}>Place Order</button> */}
         </div>
       </div>
       <div>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../styles/AddItem.css";
-import axios from "axios";
 import { toast } from "react-toastify";
 
 export default function AddItem(props) {
@@ -11,7 +10,6 @@ export default function AddItem(props) {
     Email: "",
     City: "",
   });
-  const [itemImage, setItemImage] = useState("");
 
   const onChangeHandler = (event) => {
     const name = event.target.name;
@@ -21,11 +19,28 @@ export default function AddItem(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("itemImage: " + itemImage);
+    placeOrder();
   };
 
   const placeOrder = () => {
-    toast.success("Order Placed Successfully");
+    if (
+      item.Name ||
+      item.Address ||
+      item.Email ||
+      item.PhoneNumber ||
+      item.City
+    ) {
+      toast.success("Order Placed Successfully");
+      setItem({
+        Name: "",
+        Email: "",
+        Address: "",
+        City: "",
+        PhoneNumber: "",
+      });
+    } else {
+      toast.error("Please fill all the fields");
+    }
   };
 
   return props.trigger ? (
@@ -82,13 +97,15 @@ export default function AddItem(props) {
                 name="City"
                 id="City"
                 placeholder="Enter City"
+                value={item.City}
+                onChange={onChangeHandler}
               />
             </div>
             <div>
               <input
                 type="submit"
                 value="Place Order Now"
-                onClick={() => placeOrder()}
+                // onClick={() => placeOrder()}
               />
             </div>
           </form>
