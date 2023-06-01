@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import MenuBar from "../components/MenuBar";
 import SaleCard from "../components/SaleCard";
 import { toast } from "react-toastify";
+import Banner from "../components/Banner";
 
 export default function Home() {
   const Globalstate = useContext(CartContext);
@@ -19,7 +20,8 @@ export default function Home() {
   return (
     <>
       <MenuBar />
-      <Header />
+      {/* <Header /> */}
+      <Banner />
       <div className="home">
         <h1>Latest Products</h1>
         <div className="product-container">

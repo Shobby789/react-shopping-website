@@ -1,0 +1,39 @@
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 4vw;
+  /* background: #efefef; */
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.each-slide-effect > div > button {
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 420px) {
+  .each-slide-effect > div {
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+  }
+}
