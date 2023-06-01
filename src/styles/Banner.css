@@ -7,11 +7,12 @@
   height: 95vh;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 .each-slide-effect span {
   padding: 20px;
-  font-size: 4vw;
+  font-size: 3em;
   /* background: #efefef; */
   text-align: center;
   font-weight: bold;
@@ -22,7 +23,7 @@
 .each-slide-effect > div > button {
   padding: 15px 25px;
   font-size: 1.2rem;
-  background-color: blueviolet;
+  background-color: black;
   color: white;
   border: none;
   outline: none;
@@ -31,7 +32,8 @@
 }
 
 .each-slide-effect div button:hover {
-  background-color: rgb(174, 109, 235);
+  /* background-color: rgb(174, 109, 235); */
+  background-color: black;
   transition: 0.3s;
 }
 
