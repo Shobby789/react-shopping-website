@@ -30,6 +30,11 @@
   margin-top: 20px;
 }
 
+.each-slide-effect div button:hover {
+  background-color: rgb(174, 109, 235);
+  transition: 0.3s;
+}
+
 @media screen and (max-width: 420px) {
   .each-slide-effect > div {
     height: 95vh;
